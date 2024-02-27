@@ -18,13 +18,22 @@ const dataDestinos = [
         location: 'Coatepeque, Santa Ana'
     },
     {
-        idDestination: 1,
+        idDestination: 3,
         name: "Centro Historico de San Salvador",
         imagePath: '../public/centro.jpg',
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora eaque iusto accusantium minima aperiam explicabo quibusdam officiis non!",
         tags: ['culture', 'architecture'],
         time: 5,
         location: 'San Salvador'
+    },
+    {
+        idDestination: 4,
+        name: "Termales de Santa Teresa",
+        imagePath: '../public/termales.jpg',
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora eaque iusto accusantium minima aperiam explicabo quibusdam officiis non!",
+        tags: ['mountain', 'nature', 'unique'],
+        time: 5,
+        location: 'Ahuachapan'
     }
 ]
 

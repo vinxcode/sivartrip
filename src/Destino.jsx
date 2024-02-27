@@ -9,15 +9,15 @@ const Destino = (props) => {
         <h2>{ props.destino.name }</h2>
         <p>{ props.destino.description }</p>
         <div className="flex gap-2 justify-center items-center">
-          <Tag strokeWidth={3} size={15} />
+          <Tag strokeWidth={3} size={15} color='#0E79B2'/>
           {
             props.destino.tags.map((tag, index) => (
-              <p key={index}> #{ tag } </p>
+              <p className="text-primary" key={index}> #{ tag } </p>
             ))
           }
           <div className='flex ml-3 gap-2 justify-center items-center'>
-            <Clock3 strokeWidth={3} size={15} />
-            <p>{ props.destino.time } minutes</p>
+            <Clock3 strokeWidth={3} size={15} color='#0E79B2'/>
+            <p className='text-primary'>{ props.destino.time } minutes</p>
           </div>
 
         </div>  
