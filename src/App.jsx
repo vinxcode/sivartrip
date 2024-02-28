@@ -8,7 +8,10 @@ function App() {
       <div className='flex flex-col gap-5
       absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent)]'>
         <Header />
-        <ListadoDestinos/>
+        <main>
+          <ListadoDestinos/>
+        </main>
+        
       </div>
     </div>
   )

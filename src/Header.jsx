@@ -16,7 +16,7 @@ const Header = () => {
   }
 
   return (
-    <div className="flex justify-around items-center font-fredoka font-bold bg-quarzo w-full p-5 shadow-lg">
+    <div className="flex justify-around items-center font-fredoka font-bold bg-quarzo w-full py-5 shadow-lg">
       <a href="#" className="no-underline"><h1 className="text-secondary">Sivartrip</h1></a>
       <div className='flex items-center justify-center gap-5'>
         
