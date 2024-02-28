@@ -1,6 +1,7 @@
-import { Tag, Clock3, MapPin, Plus, Star } from 'lucide-react';
+import { Tag, Clock3, MapPin, Plus, Heart } from 'lucide-react';
 
 const Destino = (props) => {
+
   return (
     <article className="shadow-lg p-10 flex gap-4 font-fredoka w-[700px] bg-white rounded-xl">
       <img src={props.destino.imagePath} alt="Playa el tunco"
@@ -32,7 +33,7 @@ const Destino = (props) => {
             Agregar a la ruta</button>
             <button className='flex justify-center items-center gap-2 px-5 py-3 bg-secondary text-quarzo cursor-pointer rounded-xl border-none
             hover:bg-secondary-hover font-fredoka'> 
-            <Star strokeWidth={3} size={15}/>
+            <Heart strokeWidth={3} size={15}/>
             Agregar a Favoritos</button>
         </div>
       </div>
