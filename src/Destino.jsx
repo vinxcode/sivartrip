@@ -1,6 +1,13 @@
 import { Tag, Clock3, MapPin, Plus, Heart } from 'lucide-react';
+import useStore from './useStore';
 
 const Destino = (props) => {
+
+const { destinos, rutas, agregarDestinoARutas } = useStore()
+
+const handleAgregarRuta = () => {
+  agregarDestinoARutas(props.destino)
+}
 
   return (
     <article className="shadow-lg p-10 flex gap-4 font-fredoka w-[700px] bg-white rounded-xl">
@@ -28,7 +35,8 @@ const Destino = (props) => {
         </div>
         <div className='flex gap-2'>
           <button className='flex justify-center items-center gap-2 px-5 py-3 bg-primary text-quarzo cursor-pointer rounded-xl border-none
-          hover:bg-primary-hover font-fredoka'> 
+          hover:bg-primary-hover font-fredoka'
+          onClick={handleAgregarRuta}> 
             <Plus strokeWidth={3} size={15}/>
             Agregar a la ruta</button>
             <button className='flex justify-center items-center gap-2 px-5 py-3 bg-secondary text-quarzo cursor-pointer rounded-xl border-none

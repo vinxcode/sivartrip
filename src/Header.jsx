@@ -4,7 +4,7 @@ import { Map, Heart } from 'lucide-react';
 
 const Header = () => {
 
-  const { contador, incrementar } = useStore()
+  const { rutas, incrementar } = useStore()
   const [mostrarRutas, setMostrarRutas] = useState(false)
 
   const handleRutas = () => {
@@ -26,8 +26,15 @@ const Header = () => {
           <p className='text-secondary'>Ruta</p>
           {
             mostrarRutas && (
-              <div className='w-80 h-80 bg-white shadow-xl absolute top-12 flex justify-center items-center'>
-                <p>No hay rutas aun</p>
+              <div className='w-80 h-80 bg-white shadow-xl absolute top-12 flex flex-col justify-start items-start p-6 gap-2 cursor-default'>
+                {
+                  rutas.map((ruta, index) => (
+                    <div className='' key={index}>
+                        <h3 className='text-primary'>{ ruta.name }</h3>
+                        <p>{ ruta.location }</p>
+                    </div>
+                  ))
+                }
               </div>
             )
           }
